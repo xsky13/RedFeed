@@ -1,0 +1,67 @@
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
+
+
+export const Post = (props) => {
+    const useStyles = makeStyles({
+        root: {
+            minWidth: 275,
+        },
+        title: {
+            fontSize: 14,
+        },
+        pos: {
+            marginBottom: 12,
+        },
+        media: {
+            height: '10rem',
+            width: props.post.thumbnail_width
+        }
+    });
+
+    const classes = useStyles();
+
+    const changePage = () => {
+        window.open(`https://reddit.com${props.post.permalink}`)
+    }
+
+    const url = 'http://redit.com' + props.post.permalink;
+
+    const pos = url.split("/").indexOf('r');
+    const fullTitle = url.split("/")[pos + 4];
+
+    return (
+        <Card className={classes.root} variant="outlined">
+            <div className="row">
+                <CardMedia
+                    className={classes.media}
+                    image={props.post.thumbnail}
+                    height={props.post.thumbnail_height}
+                    width={props.post.thumbnail_width}
+                    title="Paella dish"
+                />
+                <div className="main-card">
+                    <CardContent>
+                        <Typography className={classes.title} color="textSecondary" gutterBottom>
+                            {props.post.subreddit} • by {props.post.author}
+                        </Typography>
+                        <Typography variant="h5" component="h2">
+                            {props.post.title}
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Link to={'/post/' + props.post.subreddit + '/' + props.post.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
+                        <Button color="primary" onClick={changePage}>View on Reddit</Button>
+                    </CardActions>
+                </div>
+            </div>
+        </Card>
+    )
+}
