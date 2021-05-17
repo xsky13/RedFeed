@@ -30,7 +30,7 @@ export const Subreddit = ({ match }) => {
   if (isLoading) {
     return (
       <div style={{ textAlign: 'center' }}>
-        <img src="/#/loading.svg" />
+        <img src="/loading.svg" />
       </div>
     );
   } else {

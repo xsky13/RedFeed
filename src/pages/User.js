@@ -79,7 +79,7 @@ export const User = ({ match }) => {
                                                             </Typography>
                                                         </CardContent>
                                                         <CardActions>
-                                                            <Link to={'/RedFeed/post/' + post.data.subreddit + '/' + post.data.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
+                                                            <Link to={'/post/' + post.data.subreddit + '/' + post.data.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
                                                             <Button color="primary" onClick={changePage}>View on Reddit</Button>
                                                         </CardActions>
                                                     </div>
