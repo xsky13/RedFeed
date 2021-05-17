@@ -1,6 +1,6 @@
 {
     "homepage": "http://xsky13.github.io/redfeed",
-    "name": "RedFeed",
+    "name": "reddit",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
