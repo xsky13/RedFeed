@@ -35,16 +35,16 @@ const App = () => {
               <Route path="/" exact component={Main} />
             </Switch>
             <Switch>
-              <Route path="/subreddit/:subreddit" exact component={Subreddit} />
+              <Route path="/#/subreddit/:subreddit" exact component={Subreddit} />
             </Switch>
             <Switch>
-              <Route path="/post/:subreddit/:user/:post" exact component={DisplayPost} />
+              <Route path="/#/post/:subreddit/:user/:post" exact component={DisplayPost} />
             </Switch>
             <Switch>
-              <Route path="/user/:user" exact component={User} />
+              <Route path="/#/user/:user" exact component={User} />
             </Switch>
             <Switch>
-              <Route path="/search" exact component={Search} />
+              <Route path="/#/search" exact component={Search} />
             </Switch>
           </div>
         </div>

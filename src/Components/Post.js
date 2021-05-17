@@ -59,7 +59,7 @@ export const Post = (props) => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Link to={'/post/' + props.post.subreddit + '/' + props.post.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
+                        <Link to={'/#/post/' + props.post.subreddit + '/' + props.post.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
                         <Button color="primary" onClick={changePage}>View on Reddit</Button>
                         <Button color="primary">
                             <ThumbUp />&nbsp;&nbsp;

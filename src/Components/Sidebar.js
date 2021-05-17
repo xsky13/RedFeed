@@ -25,47 +25,47 @@ export const Sidebar = () => {
             <Typography variant="h4">Subreddits</Typography>
             <div className={classes.root}>
                 <List component="nav" aria-label="main mailbox folders">
-                    <Link to='/subreddit/announcements'>
+                    <Link to='/#/subreddit/announcements'>
                         <ListItem key="100" button>
                             <ListItemText primary="Announcements" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/funny'>
+                    <Link to='/#/subreddit/funny'>
                         <ListItem key="200" button>
                             <ListItemText primary="Funny" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/AskReddit'>
+                    <Link to='/#/subreddit/AskReddit'>
                         <ListItem key="300" button>
                             <ListItemText primary="AskReddit" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/gaming'>
+                    <Link to='/#/subreddit/gaming'>
                         <ListItem key="400" button>
                             <ListItemText primary="gaming" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/memes'>
+                    <Link to='/#/subreddit/memes'>
                         <ListItem key="500" button>
                             <ListItemText primary="memes" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/Jokes'>
+                    <Link to='/#/subreddit/Jokes'>
                         <ListItem key="600" button>
                             <ListItemText primary="Jokes" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/sports'>
+                    <Link to='/#/subreddit/sports'>
                         <ListItem key="700" button>
                             <ListItemText primary="Sports" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/DIY'>
+                    <Link to='/#/subreddit/DIY'>
                         <ListItem key="800" button>
                             <ListItemText primary="DIY" />
                         </ListItem>
                     </Link>
-                    <Link to='/subreddit/Art'>
+                    <Link to='/#/subreddit/Art'>
                         <ListItem key="900" button>
                             <ListItemText primary="Art" />
                         </ListItem>
