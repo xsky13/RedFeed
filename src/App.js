@@ -32,19 +32,19 @@ const App = () => {
           <div className="main-row">
             <Sidebar />
             <Switch>
-              <Route path="/" exact component={Main} />
+              <Route path="/RedFeed/" exact component={Main} />
             </Switch>
             <Switch>
-              <Route path="/subreddit/:subreddit" exact component={Subreddit} />
+              <Route path="/RedFeed/subreddit/:subreddit" exact component={Subreddit} />
             </Switch>
             <Switch>
-              <Route path="/post/:subreddit/:user/:post" exact component={DisplayPost} />
+              <Route path="/RedFeed/post/:subreddit/:user/:post" exact component={DisplayPost} />
             </Switch>
             <Switch>
-              <Route path="/user/:user" exact component={User} />
+              <Route path="/RedFeed/user/:user" exact component={User} />
             </Switch>
             <Switch>
-              <Route path="/search" exact component={Search} />
+              <Route path="/RedFeed/search" exact component={Search} />
             </Switch>
           </div>
         </div>
