@@ -25,14 +25,14 @@ const theme = createMuiTheme({
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <div className="App">
           <Header />
           <div className="main-row">
             <Sidebar />
             <Switch>
-              <Route path="/" exact component={Main} />
+              <Route path="/#/" exact component={Main} />
             </Switch>
             <Switch>
               <Route path="/#/subreddit/:subreddit" exact component={Subreddit} />
