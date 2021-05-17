@@ -32,7 +32,7 @@ const App = () => {
           <div className="main-row">
             <Sidebar />
             <Switch>
-              <Route path="/#/" exact component={Main} />
+              <Route path="/" exact component={Main} />
             </Switch>
             <Switch>
               <Route path="/#/subreddit/:subreddit" exact component={Subreddit} />
