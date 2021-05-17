@@ -4,7 +4,7 @@ import { ListItem } from '@material-ui/core';
 import { ListItemText } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,47 +26,47 @@ export const Sidebar = () => {
             <div className={classes.root}>
                 <List component="nav" aria-label="main mailbox folders">
                     <Link to='/subreddit/announcements'>
-                        <ListItem key="1" button>
+                        <ListItem key="100" button>
                             <ListItemText primary="Announcements" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/funny'>
-                        <ListItem key="2" button>
+                        <ListItem key="200" button>
                             <ListItemText primary="Funny" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/AskReddit'>
-                        <ListItem key="3" button>
+                        <ListItem key="300" button>
                             <ListItemText primary="AskReddit" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/gaming'>
-                        <ListItem key="4" button>
+                        <ListItem key="400" button>
                             <ListItemText primary="gaming" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/memes'>
-                        <ListItem key="5" button>
+                        <ListItem key="500" button>
                             <ListItemText primary="memes" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/Jokes'>
-                        <ListItem key="6" button>
+                        <ListItem key="600" button>
                             <ListItemText primary="Jokes" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/sports'>
-                        <ListItem key="7" button>
+                        <ListItem key="700" button>
                             <ListItemText primary="Sports" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/DIY'>
-                        <ListItem key="8" button>
+                        <ListItem key="800" button>
                             <ListItemText primary="DIY" />
                         </ListItem>
                     </Link>
                     <Link to='/subreddit/Art'>
-                        <ListItem key="9" button>
+                        <ListItem key="900" button>
                             <ListItemText primary="Art" />
                         </ListItem>
                     </Link>

@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
+import { ThumbUp } from '@material-ui/icons';
 
 
 export const Post = (props) => {
@@ -21,7 +22,6 @@ export const Post = (props) => {
             marginBottom: 12,
         },
         media: {
-            height: '10rem',
             width: props.post.thumbnail_width
         }
     });
@@ -37,16 +37,18 @@ export const Post = (props) => {
     const pos = url.split("/").indexOf('r');
     const fullTitle = url.split("/")[pos + 4];
 
+    console.log(props.post);
+
     return (
         <Card className={classes.root} variant="outlined">
             <div className="row">
-                <CardMedia
-                    className={classes.media}
-                    image={props.post.thumbnail}
-                    height={props.post.thumbnail_height}
-                    width={props.post.thumbnail_width}
-                    title="Paella dish"
-                />
+                {props.post.thumbnail == "default" || props.post.thumbnail == "self" || props.post.thumbnail == "image" || props.post.thumbnail == "" ? "" :
+                    <CardMedia
+                        className={classes.media}
+                        image={props.post.thumbnail}
+                        component="img"
+                    />
+                }
                 <div className="main-card">
                     <CardContent>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -59,6 +61,10 @@ export const Post = (props) => {
                     <CardActions>
                         <Link to={'/post/' + props.post.subreddit + '/' + props.post.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
                         <Button color="primary" onClick={changePage}>View on Reddit</Button>
+                        <Button color="primary">
+                            <ThumbUp />&nbsp;&nbsp;
+                            {props.post.score}
+                        </Button>
                     </CardActions>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Typography } from '@material-ui/core';
-import { Post } from '../../Components/Post';
+import { Post } from '../Components/Post';
 
 
 export const Subreddit = ({ match }) => {
@@ -30,7 +30,7 @@ export const Subreddit = ({ match }) => {
   if (isLoading) {
     return (
       <div style={{ textAlign: 'center' }}>
-        <img src="http://localhost/codevemy/assets/images/loading.svg" />
+        <img src="/loading.svg" />
       </div>
     );
   } else {
@@ -43,19 +43,19 @@ export const Subreddit = ({ match }) => {
       <>
         <div className="posts">
           <Typography variant="h2">r/{subreddit}</Typography>
+          <br />
           {
 
             (articles !== null) ? articles.map((post, i) => {
               return (
                 <>
-                  <Post key={i} post={post.data} />
+                  <Post post={post.data} />
                   <br />
                 </>
               );
             }) : ''
           }
         </div>
-        {/* <Route path="/subreddit/:subreddit" exact component={Subreddit} /> */}
       </>
     );
   }

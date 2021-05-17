@@ -10,6 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import GitHub from '@material-ui/icons/GitHub';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -139,22 +140,25 @@ export const Header = () => {
         <div className={classes.grow}>
             <AppBar position="static">
                 <Toolbar>
+                    <img src="/favicon.ico" width="50" />&nbsp;&nbsp;&nbsp;
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Reddit Clone
+                        <Link to="/" style={{color: 'white'}}>RedFeed</Link>
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                            <SearchIcon />
-                        </div>
-                        <InputBase
-                            placeholder="Search…"
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput,
-                            }}
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
+                        <form action="/search" method="get">
+                            <div className={classes.searchIcon}>
+                                <SearchIcon />
+                            </div>
+                            <InputBase
+                                placeholder="Search…"
+                                classes={{
+                                    root: classes.inputRoot,
+                                    input: classes.inputInput,
+                                }}
+                                inputProps={{ 'aria-label': 'search', 'name': 'q' }}
+                            />
+                        </form>
                     </div>
                     <div className={classes.sectionDesktop}>
                         <IconButton aria-label="Github" color="inherit">

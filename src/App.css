@@ -1,17 +1,23 @@
 html,
 body {
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 body,
 * {
-    font-family: 'Poppins' !important;
-    font-weight: 300 !important;
+    font-family: 'Inter' !important;
 }
 
 a {
     text-decoration: none;
-    color: #3f51b5;
+    color: #f44336;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .github {
@@ -35,7 +41,15 @@ a {
     margin-right: 1rem;
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 880px) {
+    .sidebar {
+        margin-left: 0 !important;
+        /* width: 100%; */
+    }
+    .sidebar .makeStyles-root-10 {
+        width: 100vh;
+        text-align: center;
+    }
     .main-row {
         flex-wrap: wrap;
     }
@@ -44,6 +58,12 @@ a {
         margin-left: 0;
         width: 90%;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1533px) {
+    .sidebar {
+        margin-left: 2rem;
     }
 }
 
@@ -60,4 +80,18 @@ input {
     border: none;
     color: white;
     outline: 0;
+}
+
+.title {
+    word-break: break-word;
+}
+
+.main-image {
+    width: 500px
+}
+
+@media screen and (max-width: 865px) {
+    .main-image {
+        width: 100%;
+    }
 }
