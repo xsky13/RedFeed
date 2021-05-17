@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/RedFeed/static/css/main.1b756f12.chunk.css",
-    "main.js": "/RedFeed/static/js/main.b69e8070.chunk.js",
-    "main.js.map": "/RedFeed/static/js/main.b69e8070.chunk.js.map",
+    "main.js": "/RedFeed/static/js/main.b8a9e057.chunk.js",
+    "main.js.map": "/RedFeed/static/js/main.b8a9e057.chunk.js.map",
     "runtime-main.js": "/RedFeed/static/js/runtime-main.d3935a04.js",
     "runtime-main.js.map": "/RedFeed/static/js/runtime-main.d3935a04.js.map",
-    "static/js/2.8fab6d0a.chunk.js": "/RedFeed/static/js/2.8fab6d0a.chunk.js",
-    "static/js/2.8fab6d0a.chunk.js.map": "/RedFeed/static/js/2.8fab6d0a.chunk.js.map",
+    "static/js/2.9951e05a.chunk.js": "/RedFeed/static/js/2.9951e05a.chunk.js",
+    "static/js/2.9951e05a.chunk.js.map": "/RedFeed/static/js/2.9951e05a.chunk.js.map",
     "index.html": "/RedFeed/index.html",
     "static/css/main.1b756f12.chunk.css.map": "/RedFeed/static/css/main.1b756f12.chunk.css.map",
-    "static/js/2.8fab6d0a.chunk.js.LICENSE.txt": "/RedFeed/static/js/2.8fab6d0a.chunk.js.LICENSE.txt"
+    "static/js/2.9951e05a.chunk.js.LICENSE.txt": "/RedFeed/static/js/2.9951e05a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3935a04.js",
-    "static/js/2.8fab6d0a.chunk.js",
+    "static/js/2.9951e05a.chunk.js",
     "static/css/main.1b756f12.chunk.css",
-    "static/js/main.b69e8070.chunk.js"
+    "static/js/main.b8a9e057.chunk.js"
   ]
 }
