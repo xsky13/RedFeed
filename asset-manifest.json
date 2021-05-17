@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/RedFeed/static/css/main.1b756f12.chunk.css",
-    "main.js": "/RedFeed/static/js/main.faa275ea.chunk.js",
-    "main.js.map": "/RedFeed/static/js/main.faa275ea.chunk.js.map",
+    "main.js": "/RedFeed/static/js/main.61ce8082.chunk.js",
+    "main.js.map": "/RedFeed/static/js/main.61ce8082.chunk.js.map",
     "runtime-main.js": "/RedFeed/static/js/runtime-main.d3935a04.js",
     "runtime-main.js.map": "/RedFeed/static/js/runtime-main.d3935a04.js.map",
     "static/js/2.8fab6d0a.chunk.js": "/RedFeed/static/js/2.8fab6d0a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d3935a04.js",
     "static/js/2.8fab6d0a.chunk.js",
     "static/css/main.1b756f12.chunk.css",
-    "static/js/main.faa275ea.chunk.js"
+    "static/js/main.61ce8082.chunk.js"
   ]
 }
