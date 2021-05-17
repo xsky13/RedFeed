@@ -45,7 +45,7 @@ export const Search = ({ match }) => {
     if (isLoading) {
         return (
             <div style={{ textAlign: 'center' }}>
-                <img src="/RedFeed/loading.svg" />
+                <img src="/loading.svg" />
             </div>
         );
     } else {
@@ -83,7 +83,7 @@ export const Search = ({ match }) => {
                                                 </Typography>
                                             </CardContent>
                                             <CardActions>
-                                                <Link to={'/RedFeed/post/' + result.data.subreddit + '/' + result.data.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
+                                                <Link to={'/post/' + result.data.subreddit + '/' + result.data.id + '/' + fullTitle}><Button color="primary">Details</Button></Link>
                                                 <Button color="primary" onClick={changePage}>View on Reddit</Button>
                                                 <Button color="primary">
                                                     <ThumbUp />&nbsp;&nbsp;
