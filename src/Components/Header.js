@@ -53,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     },
     inputInput: {
         padding: theme.spacing(1, 1, 1, 0),
-        // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
         transition: theme.transitions.create('width'),
         width: '100%',
@@ -140,7 +139,7 @@ export const Header = () => {
         <div className={classes.grow}>
             <AppBar position="static">
                 <Toolbar>
-                    <img src="/favicon.ico" width="50" />&nbsp;&nbsp;&nbsp;
+                    <img src="/RedFeed/favicon.ico" width="50" />&nbsp;&nbsp;&nbsp;
                     <Typography className={classes.title} variant="h6" noWrap>
                         <Link to="/" style={{color: 'white'}}>RedFeed</Link>
                     </Typography>
