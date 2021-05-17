@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RedFeed/static/css/main.1b756f12.chunk.css",
+    "main.js": "/RedFeed/static/js/main.6f749704.chunk.js",
+    "main.js.map": "/RedFeed/static/js/main.6f749704.chunk.js.map",
+    "runtime-main.js": "/RedFeed/static/js/runtime-main.d3935a04.js",
+    "runtime-main.js.map": "/RedFeed/static/js/runtime-main.d3935a04.js.map",
+    "static/js/2.32cb02e6.chunk.js": "/RedFeed/static/js/2.32cb02e6.chunk.js",
+    "static/js/2.32cb02e6.chunk.js.map": "/RedFeed/static/js/2.32cb02e6.chunk.js.map",
+    "index.html": "/RedFeed/index.html",
+    "static/css/main.1b756f12.chunk.css.map": "/RedFeed/static/css/main.1b756f12.chunk.css.map",
+    "static/js/2.32cb02e6.chunk.js.LICENSE.txt": "/RedFeed/static/js/2.32cb02e6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3935a04.js",
+    "static/js/2.32cb02e6.chunk.js",
+    "static/css/main.1b756f12.chunk.css",
+    "static/js/main.6f749704.chunk.js"
+  ]
+}
