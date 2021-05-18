@@ -257,7 +257,7 @@ export const Header = () => {
 
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <a href="https://github.com/xsky13/RedFeed/" target="_blank">
+                        <a href="https://github.com/xsky13/RedFeed/" target="_blank" className="github-link">
                             <IconButton aria-label="Github" color="inherit">
                                 <GitHub />
                             </IconButton>

@@ -98,3 +98,7 @@ input {
         width: 100%;
     }
 }
+
+.github-link {
+    color: white !important;
+}
