@@ -1,7 +1,10 @@
 html,
 body {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.01);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 body,

@@ -36,7 +36,7 @@ export const User = ({ match }) => {
     if (isLoading) {
         return (
             <div style={{ textAlign: 'center' }}>
-                <img src="http://localhost/codevemy/assets/images/loading.svg" />
+                <img src="/RedFeed/loading.svg" />
             </div>
         );
     } else {

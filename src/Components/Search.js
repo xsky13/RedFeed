@@ -45,7 +45,7 @@ export const Search = ({ match }) => {
     if (isLoading) {
         return (
             <div style={{ textAlign: 'center' }}>
-                <img src="/loading.svg" />
+                <img src="/RedFeed/loading.svg" />
             </div>
         );
     } else {

@@ -55,7 +55,7 @@ export const DisplayPost = ({ match }) => {
     if (isLoading) {
         return (
             <div style={{ textAlign: 'center' }}>
-                <img src="http://localhost/codevemy/assets/images/loading.svg" alt="loading..." />
+                <img src="/RedFeed/loading.svg" alt="loading..." />
             </div>
         );
     } else {
