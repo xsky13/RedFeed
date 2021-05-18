@@ -257,11 +257,11 @@ export const Header = () => {
 
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <Link to="https://github.com/xsky13/RedFeed/">
+                        <a href="https://github.com/xsky13/RedFeed/" target="_blank">
                             <IconButton aria-label="Github" color="inherit">
                                 <GitHub />
                             </IconButton>
-                        </Link>
+                        </a>
                     </div>
                     <div className={classes.sectionMobile}>
                         <IconButton
