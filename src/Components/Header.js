@@ -139,7 +139,7 @@ export const Header = () => {
         <div className={classes.grow}>
             <AppBar position="static">
                 <Toolbar>
-                    <img src="/favicon.ico" width="50" />&nbsp;&nbsp;&nbsp;
+                    <img src="/RedFeed/favicon.ico" width="50" />&nbsp;&nbsp;&nbsp;
                     <Typography className={classes.title} variant="h6" noWrap>
                         <Link to="/" style={{color: 'white'}}>RedFeed</Link>
                     </Typography>
