@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
 import { Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 const path = require('path');
 
 
@@ -18,12 +19,11 @@ export const SinglePost = (props) => {
         bodyText = bodyText.replaceAll('"', '');
     }
 
-    console.log(props.post.selftext_html === null);
     return (
         <>
             <div className="post">
                 <br />
-                <Typography variant="h5" color="textSecondary">{props.post.title} • by {props.post.author}</Typography>
+                <Typography variant="h5" color="textSecondary">{props.post.title} • by <Link to={"/user/" + props.post.author}>{props.post.author}</Link></Typography>
                 <br />
                 {ReactHtmlParser(bodyText)}
                 <br />

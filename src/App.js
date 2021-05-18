@@ -6,7 +6,6 @@ import { Subreddit } from './pages/Subreddit';
 import { Sidebar } from './Components/Sidebar';
 import { DisplayPost } from './Components/DisplayPost';
 import { User } from './pages/User';
-import { Search } from './Components/Search';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import red from '@material-ui/core/colors/red';
 
@@ -42,9 +41,6 @@ const App = () => {
             </Switch>
             <Switch>
               <Route path="/user/:user" exact component={User} />
-            </Switch>
-            <Switch>
-              <Route path="/search" exact component={Search} />
             </Switch>
           </div>
         </div>

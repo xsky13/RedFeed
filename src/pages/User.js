@@ -13,7 +13,6 @@ export const User = ({ match }) => {
         params: { user },
     } = match;
     const [isLoading, setIsLoading] = useState(true);
-    const [data, setData] = useState();
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
@@ -23,8 +22,6 @@ export const User = ({ match }) => {
             } else {
                 result.json().then(data => {
                     if (data !== null) {
-                        console.log(data);
-                        setData(data);
                         setIsLoading(false);
                         setArticles(data.data.children);
                     }

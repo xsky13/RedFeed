@@ -37,8 +37,6 @@ export const Post = (props) => {
     const pos = url.split("/").indexOf('r');
     const fullTitle = url.split("/")[pos + 4];
 
-    console.log(props.post);
-
     return (
         <Card className={classes.root} variant="outlined">
             <div className="row">
@@ -52,7 +50,7 @@ export const Post = (props) => {
                 <div className="main-card">
                     <CardContent>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
-                            {props.post.subreddit} • by {props.post.author}
+                            {props.post.subreddit} • by <Link to={"/user/" + props.post.author}>{props.post.author}</Link>
                         </Typography>
                         <Typography variant="h5" component="h2">
                             {props.post.title}

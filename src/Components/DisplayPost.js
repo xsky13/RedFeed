@@ -5,7 +5,6 @@ import { SinglePost } from './SinglePost';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import { ThumbUp } from '@material-ui/icons';
 const entities = require("entities");
 
@@ -29,7 +28,6 @@ export const DisplayPost = ({ match }) => {
         params: { subreddit, user, post },
     } = match;
     const [isLoading, setIsLoading] = useState(true);
-    const [data, setData] = useState();
     const [articles, setArticles] = useState([]);
     const [comments, setComments] = useState([]);
 
@@ -41,8 +39,6 @@ export const DisplayPost = ({ match }) => {
             } else {
                 result.json().then(data => {
                     if (data !== null) {
-                        console.log(data);
-                        setData(data);
                         setIsLoading(false);
                         setArticles(data[0].data.children);
                         setComments(data[1].data.children);

@@ -15,7 +15,6 @@ export const Main = () => {
             } else {
                 result.json().then(data => {
                     if (data !== null) {
-                        console.log(data)
                         setArticles(data.data.children);
                     }
                 });
