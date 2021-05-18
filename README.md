@@ -1,3 +1,7 @@
+# RedFeed
+
+This project is a Reddit feed where you can search and see posts, users, and comments. View it live at [https://xsky13.github.io/RedFeed/](https://xsky13.github.io/RedFeed/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
